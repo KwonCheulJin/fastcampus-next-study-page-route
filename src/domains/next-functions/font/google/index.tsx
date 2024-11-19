@@ -3,7 +3,7 @@ import Head from 'next/head';
 import styles from './index.module.css';
 
 const fontSize = { fontSize: 50 };
-export function GoogleMain() {
+export default function GoogleMain() {
   return (
     <main>
       <p style={fontSize}>FONT: DEFAULT</p>

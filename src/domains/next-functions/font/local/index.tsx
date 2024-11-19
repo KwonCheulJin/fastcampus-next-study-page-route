@@ -1,6 +1,6 @@
 import { gilroy } from '@/styles/fonts';
 
-export function LocalMain() {
+export default function LocalMain() {
   return (
     <main>
       <p className={`${gilroy.className} text-5xl`}>Gilroy</p>
