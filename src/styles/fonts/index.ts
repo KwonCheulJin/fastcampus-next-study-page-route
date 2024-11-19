@@ -1,3 +1,4 @@
+import { Baskervville, Noto_Sans } from 'next/font/google';
 import nextLocalFont from 'next/font/local';
 const gilroy = nextLocalFont({
   src: [
@@ -17,4 +18,20 @@ const gilroy = nextLocalFont({
   fallback: ['system-ui'],
 });
 
-export { gilroy };
+const noto_sans = Noto_Sans({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800'],
+  display: 'swap',
+  fallback: ['system-ui'],
+  preload: true,
+  adjustFontFallback: true,
+});
+
+const baskervville = Baskervville({
+  subsets: ['latin'],
+  weight: ['400'],
+  display: 'swap',
+  fallback: ['system-ui'],
+});
+
+export { baskervville, gilroy, noto_sans };
